@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* This is a simple program using printf */
+/**
+ * main - Entry point
+ *
+ *Return: Always 0 (success)
+ */
 
 int main(void)
 {

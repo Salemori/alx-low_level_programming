@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* A simple program to calculate compilation size */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 
 int main(void)
 {
