@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	int digt;
+	int s;
 
-	for (digt = 48; digt <= 57; digt++)
-		putchar(digt);
-	if (digt != 57)
-		putchar(44);
-		putchar(32);
-	putchar(10);
+	for (s = 48; s < 58; s++)
+		putchar(s);
+		if (s != 57)
+			putchar(',');
+			putchar(' ');
+	putchar('\n');
 	return (0);
 }
