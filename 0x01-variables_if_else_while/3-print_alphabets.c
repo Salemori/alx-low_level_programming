@@ -1,17 +1,18 @@
-nclude <studio.h>
+#include <stdio.h>
 /**
  *main - prints the alphabet in lowercase, and then in uppercase
  *
- *Return - Always 0
+ *Return: Always 0
  */
 
 int main(void)
 {
-	char luapha;
+	char alp;
 
-	for(lualpha = 'a' ; lualpha <= 'z' ; ++lualpha)
-		putchar(lualpha);
-	for(lualpha = 'A' ; lualpha <= 'Z' ; lualpha++)
-		putchar(lualpha);
+	for (alp = 'a' ; alp <= 'z' ; alp++)
+		putchar(alp);
+	for (alp = 'A' ; alp <= 'Z' ; alp++)
+		putchar(alp);
+	putchar('\n');
 	return (0);
 }
