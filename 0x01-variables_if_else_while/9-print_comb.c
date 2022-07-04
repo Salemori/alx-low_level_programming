@@ -7,14 +7,18 @@
  */
 int main(void)
 {
-	int no[] = {'0', ',', ' ', '1', ',', ' ', '2', ',', ' ', '3',
-	',', ' ', '4', ',', ' ', '5', ',', ' ', '6', ',', ' ', '7',
-	',', ' ', '8', ',', ' ', '9'};
+	int no;
 
-	int x;
+	for (no = 0; no <= 9; no++)
+	{
+		putchar((no % 10) + '0');
+		if (no == 9)
+			continue;
 
-	for (x = 0; x <= 28; x++)
-		putchar(no[x]);
+		putchar(',');
+		putchar(' ');
+	}
+
 	putchar('\n');
 	return (0);
 }
