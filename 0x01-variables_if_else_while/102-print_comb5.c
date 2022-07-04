@@ -12,7 +12,7 @@ int main(void)
 
 	for (noa = 0; noa <= 98; noa++)
 	{
-		for (nob = nob + 1; nob <= 99; nob++)
+		for (nob = noa + 1; nob <= 99; nob++)
 		{
 			putchar((noa / 10) + '0');
 			putchar((noa % 10) + '0');

@@ -10,13 +10,13 @@ int main(void)
 	int noa;
 	int nob;
 
-	for (noa = 0; noa < 10; noa++)
+	for (noa = 0; noa < 9; noa++)
 	{
-		for (nob = 0; nob < 10; nob++)
+		for (nob = noa + 1; nob < 10; nob++)
 		{
 			putchar((noa % 10) + '0');
 			putchar((nob % 10) + '0');
-			if (noa == 9 && nob == 9)
+			if (noa == 8 && nob == 9)
 				continue;
 			putchar(',');
 			putchar(' ');
