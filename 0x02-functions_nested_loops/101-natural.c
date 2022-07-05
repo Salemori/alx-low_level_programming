@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main -> lists all the natural numbers
@@ -14,7 +13,7 @@ int main(void)
 	for (p = 0; p < 1024; p++)
 	{
 		if ((p % 3) == 0 || (p % 5) == 0)
-			ad += i;
+			ad += p;
 	}
 
 	printf("%d\n", ad);
