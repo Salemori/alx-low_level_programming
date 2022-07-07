@@ -13,7 +13,7 @@ void print_most_numbers(void)
 
 	for (o = 48; o <= 57; o++)
 	{
-		if (a != 50)
+		if (o != 50)
 		{
 			if (o != 52)
 			{
