@@ -4,22 +4,34 @@
 * _atoi -> convert a string to an integer.
 * @s: pointer variable
 *
-* Return: n *p
+* Return: converter integer
 */
 
 int _atoi(char *s)
 {
-	int p = 1;
-	unsigned int n = 0;
+	unsigned int p = 0, sz = 0, x = 0, n = 1, m = 1, l;
 
-	do {
-	if (*s == '-')
-		p *= -1;
-	else if (*s >= '0' && *s <= '9')
-		n = n * 10 + (*s - '0');
-	else if (n > 0)
-		break;
-	} while (*s++);
+	while (*(s + p) != '\0')
+	{
+		if (sz > 0 && (*(s + p) < '0' || *(s + p) > '9'))
+			break;
 
-	return (n *p);
+		if (*(s + p) == '-')
+			n *= -1;
+
+		if ((*(s + p) >= '0') && (*(s + p) <= '9'))
+		{
+			if (sz > 0)
+				m *= 10;
+			sz++;
+		}
+		p++;
+	}
+
+	for (l = p - sz; l < p; l++)
+	{
+		x = x + ((*(s + l) - 48) * m);
+		m /= 10;
+	}
+	return (x * n);
 }
