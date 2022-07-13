@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strcpy -> copies a string.
+ * _strncpy -> copies a string.
  * @dest: first string
- * @scr: second string
- * @n: byte to be used
+ * @src: second string
+ * @n: byte to copy
  *
- * Return: dest
+ * Return: first string
  */
 
 char *_strncpy(char *dest, char *src, int n)

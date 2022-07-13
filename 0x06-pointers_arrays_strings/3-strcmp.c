@@ -11,7 +11,7 @@
 int _strcmp(char *s1, char *s2)
 {
 
-	int a; 
+	int a;
 	int b;
 
 	a = 0;
