@@ -2,7 +2,7 @@
 
 /**
 * print_chessboard -> fills memory with a constant byte.
-* @a[8]: character
+* @a: character
 * unsigned integer
 * Return: s which is character
 */

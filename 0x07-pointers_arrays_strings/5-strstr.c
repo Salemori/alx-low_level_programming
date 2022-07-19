@@ -3,8 +3,7 @@
 /**
 * _strstr -> fills memory with a constant byte.
 * @haystack: character
-* @needle:wq
-: unsigned integer
+* @needle: character 2
 * Return: s which is character
 */
 

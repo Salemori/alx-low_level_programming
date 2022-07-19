@@ -4,6 +4,7 @@
  * _memset -> fills memory with a constant byte.
  * @s: character
  * @n: unsigned integer
+ * @b: unsigned integer
  * Return: s which is character
  */
 
