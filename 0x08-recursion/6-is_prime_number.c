@@ -22,7 +22,7 @@ return (0);
 }
 else
 {
-return (scout(n, m-1));
+return (scout (n, m-1));
 }
 }
 }
@@ -34,6 +34,6 @@ return (0);
 }
 else
 {
-return(scout(n, n/2));
+return (scout (n, n/2));
 }
 }
