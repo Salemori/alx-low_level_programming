@@ -46,29 +46,3 @@ int **alloc_grid(int width, int height)
 	}
 	return (grid);
 }
-
-/**
- * print_grid - print grid.
- * @width: width of the array.
- * @height: height of the array.
- * @grid: int pointer to pointer.
- * Return: pointer of an array of integers
- */
-void print_grid(int **grid, int width, int height)
-{
-	int w;
-	int h;
-
-	h = 0;
-	while (h < height)
-	{
-		w = 0;
-		while (w < width)
-		{
-		printf("%d ", grid[h][w]);
-		w++;
-		}
-		printf("\n");
-		h++;
-	}
-}
